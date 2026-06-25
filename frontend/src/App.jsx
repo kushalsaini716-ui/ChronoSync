@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import api from "./services/api";
 
-import Login from "./pages/Login";
+import Login from "./pages/login";
 import Dashboard from "./pages/Dashboard";
 
 function App() {

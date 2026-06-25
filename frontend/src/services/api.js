@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API_URL,
+   baseURL: "https://chronosync-9lts.onrender.com",
   withCredentials: true,
 });
 

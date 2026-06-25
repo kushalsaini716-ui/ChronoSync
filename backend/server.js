@@ -9,24 +9,26 @@ const app = express();
 
 app.use(express.json());
 
-app.use(
-    cors({
-        origin: "http://localhost:5173",
-        credentials: true,
-    })
-);
+app.use(cors({
+  origin: [
+    "http://localhost:5173",
+    "https://chrono-sync-rosy.vercel.app"
+  ],
+  credentials: true,
+}));
 
-app.use(
-  session({
-    secret: "chronosync-secret-key",
-    resave: false,
-    saveUninitialized: false,
-    cookie: {
-      httpOnly: true,
-      sameSite: "lax",
-    },
-  })
-);
+app.set("trust proxy", 1);
+
+app.use(session({
+  secret: "chronosync-secret",
+  resave: false,
+  saveUninitialized: false,
+  cookie: {
+    httpOnly: true,
+    secure: true,
+    sameSite: "none",
+  }
+}));
 
 
 app.get("/",(req,res) => {

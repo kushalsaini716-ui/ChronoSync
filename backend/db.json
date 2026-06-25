@@ -1,0 +1,46 @@
+{
+    "users": [
+    {
+      "username": "commander",
+      "password": "123456",
+      "clearance": "LEVEL_3"
+    },
+    {
+      "username": "captain",
+      "password": "abcd1234",
+      "clearance": "LEVEL_2"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "task_102",
+      "description": "Recalibrate life support telemetry matrix.",
+      "clearanceRequired": "LEVEL_3",
+      "expirationTimestamp": 1782381000000
+    },
+    {
+      "id": "task_107",
+      "description": "Purge relay buffer on grid sector 4-Alpha.",
+      "clearanceRequired": "LEVEL_2",
+      "expirationTimestamp": 1782381265000
+    },
+    {
+      "id": "task_109",
+      "description": "Run diagnostics on auxiliary power relay.",
+      "clearanceRequired": "LEVEL_1",
+      "expirationTimestamp": 1782381431000
+    },
+    {
+      "id": "task_113",
+      "description": "Initiate deep scan on comms encryption layer.",
+      "clearanceRequired": "LEVEL_3",
+      "expirationTimestamp": 1782381223000
+    },
+    {
+      "id": "e419386d-3097-49c3-98b7-a6b6ab08481c",
+      "description": "kill someone",
+      "clearanceRequired": "LEVEL_3",
+      "expirationTimestamp": 1782405910058
+    }
+  ]
+}
